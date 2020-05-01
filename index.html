@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript Practice</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: skyblue;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="target"></div>
+
+    <script>
+      "use strict";
+      //id=target を取得
+      //イベントリスナーを追加し、クリックで処理を実行
+      document.getElementById("target").addEventListener("click", () => {
+        document.getElementById("target").style.background = "pink";
+      });
+    </script>
+  </body>
+</html>
